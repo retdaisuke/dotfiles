@@ -1,0 +1,16 @@
+*core
+*elc
+*stuckdump
+*~
+_*
+
+/custom.el
+/network-security.data
+/history
+/auto-save-list
+/el-get
+/elpa
+/server
+/session-save.el
+/tramp
+/url
