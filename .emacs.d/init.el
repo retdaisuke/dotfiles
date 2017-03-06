@@ -14,7 +14,7 @@
 (add-to-list 'package-archives '("melpa" . "http://melpa.milkbox.net/packages/") t)
 (add-to-list 'package-archives '("marmalade" . "http://marmalade-repo.org/packages/") t)
 (package-initialize)
-(package-refresh-contents)
+;(package-refresh-contents)
 
 ;; install packages
 (load "~/.emacs.d/packages")
