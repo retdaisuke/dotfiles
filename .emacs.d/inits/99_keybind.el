@@ -31,10 +31,31 @@
 ;; http://www.math.s.chiba-u.ac.jp/~matsu/emacs/emacs21/grep.html
 (global-set-key "\C-x\C-b" 'buffer-menu)
 
-;; macOS
+;; macOS Emacs 25.1
 (when (eq system-type 'darwin)
   ; (setq mac-option-key-is-meta t)
   ; (setq mac-option-modifier 'meta)
   ; (setq mac-command-key-is-meta nil)
   ; (setq mac-command-modifier 'super)
   (setq ns-command-modifier (quote meta)))
+
+;; macOS Emacs 26.1
+(when (eq system-type 'darwin)
+	    (setq mac-option-modifier 'meta)
+	    (setq mac-command-modifier 'hyper))
+
+;; mac switch meta key
+(defun mac-switch-meta nil
+  "switch meta between Option and Command"
+  (interactive)
+  (if (eq mac-option-modifier nil)
+    (progn
+	    (setq mac-option-modifier 'meta)
+	    (setq mac-command-modifier 'hyper)
+	    )
+    (progn
+      (setq mac-option-modifier nil)
+      (setq mac-command-modifier 'meta)
+      )
+    )
+  )
