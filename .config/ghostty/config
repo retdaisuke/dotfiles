@@ -1,0 +1,24 @@
+#
+# Config Reload: Cmd + Shift + ,
+
+#== Background
+# $ ghostty +list-themes
+#theme = iTerm2 Solarized Light
+#theme = Monokai Pro Light
+theme = dawnfox
+background-opacity = 0.96
+
+#== Font
+font-family = "Bizin Gothic"
+font-size = 14
+font-thicken = 1
+# disable ligatures
+font-feature = -calt
+font-feature = -liga
+font-feature = -dlig
+
+#== Misc.
+window-save-state = always
+quit-after-last-window-closed = true
+term = xterm-256color
+
