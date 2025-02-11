@@ -1,0 +1,4 @@
+[tools]
+python = "latest"
+go = "latest"
+node = "23.7.0"
