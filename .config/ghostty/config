@@ -3,9 +3,7 @@
 
 #== Background
 # $ ghostty +list-themes
-#theme = iTerm2 Solarized Light
-#theme = Monokai Pro Light
-theme = dawnfox
+theme = iTerm2 Solarized Light
 background-opacity = 0.96
 
 #== Font
