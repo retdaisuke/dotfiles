@@ -127,3 +127,11 @@ ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=cyan'
 
 HISTSIZE=10000
 SAVEHIST=10000
+
+#--------------------------------------------------------------------
+# functions
+#--------------------------------------------------------------------
+batlog() {
+  tail -f "$1" | bat --paging=never -l log
+}
+
