@@ -18,8 +18,8 @@ export ZSH="$HOME/.oh-my-zsh"
 #ZSH_THEME="powerlevel10k/powerlevel10k"
 export AGNOSTER_CONTEXT_FG=231
 export AGNOSTER_CONTEXT_BG=031
-export AGNOSTER_DIR_FG=094
-export AGNOSTER_DIR_BG=007
+export AGNOSTER_DIR_FG=003
+export AGNOSTER_DIR_BG=230
 export AGNOSTER_GIT_CLEAN_FG=031
 export AGNOSTER_GIT_CLEAN_BG=193
 export AGNOSTER_GIT_DIRTY_FG=005
@@ -128,6 +128,7 @@ ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=cyan'
 HISTSIZE=10000
 SAVEHIST=10000
 
+PROMPT='%{%f%b%k%}$(build_prompt) '$'\n'"> "
 #--------------------------------------------------------------------
 # functions
 #--------------------------------------------------------------------
